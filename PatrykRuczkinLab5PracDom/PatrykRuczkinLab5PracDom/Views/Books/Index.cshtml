@@ -1,0 +1,50 @@
+﻿@model IEnumerable<PatrykRuczkinLab5PracDom.Models.BookViewModel>
+
+
+<p>
+    <a asp-action="Create">Dodaj</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tytuł
+            </th>
+            <th>
+                Imię i nazwisko autora
+            </th>
+            <th>
+                Kategoria
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.ActionLink( item.AuthorFullName, "Index","Authors", new {fullname = item.AuthorFullName})
+                
+            </td>
+            <td>
+                @Html.ActionLink( item.CategoryName, "Index","Categories", new {categoryName = item.CategoryName})
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<a>
+    @Html.ActionLink("Wydawcy", "Index", "Publishers")
+</a>

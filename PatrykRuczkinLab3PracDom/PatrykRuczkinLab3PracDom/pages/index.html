@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<!-- Stworzone na: Google Chrome -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<!-- Wygląd strony -->
+<body>
+    <!-- Panel nawigacyjny -->
+    <nav class="links">
+        <ul>
+            <li><a href="index.html" id="index">Clock</a></li>
+            <li><a href="strona2.html" id="timer">Timer</a></li>
+            <li><a href="strona3.html" id="countdown">Countdown</a></li>
+        </ul>
+    </nav>
+    <!-- Nagłówek naszej strony -->
+    <header>Clock !</header>
+
+    <!-- Kontener zawierajacy dane  -->
+    <article id="container">
+        <!-- Kontener z datą -->
+        <div class="datetime_container">
+            <span id="days" class="date">00</span>
+            <span class="comma">,</span>
+            <span id="months" class="date">00</span>
+            <span class="comma">,</span>
+            <span id="years" class="date">2000</span>
+        </div>
+        <!-- Kontener z czasem -->
+        <div class="datetime_container">
+            <span id="hours" class="time">00</span>
+            <span class="separator">:</span>
+            <span id="minutes" class="time">00</span>
+            <span class="separator">:</span>
+            <span id="seconds" class="time">00</span>
+        </div>
+    </article>
+<!-- Podłączenie skryptów do strony -->
+    <script src="../scripts/skrypty.js"></script>
+    <script>Init();</script>
+
+</body>
+</html>

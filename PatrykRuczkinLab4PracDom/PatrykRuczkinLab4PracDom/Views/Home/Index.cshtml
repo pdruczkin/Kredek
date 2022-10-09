@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PatrykRuczkinLab4PracDom.Models.RecipeViewModel>
+
+@{
+    ViewData["Title"] = "Książka Patryka";
+}
+
+<h1>Książka Patryka</h1>
+@{
+    if (ViewBag.username != null && ViewBag.username != "")
+    {
+        <h3>Witaj @ViewBag.username</h3>
+    }
+}
+<h3></h3>
+
+
+<p>
+    <a asp-action="CreateRecipe">Dodaj</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nazwa
+            </th>
+            <th>
+                Cena
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.ActionLink("Szczegóły", "RecipeById", new { id = item.Id  }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

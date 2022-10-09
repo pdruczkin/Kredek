@@ -1,0 +1,5 @@
+D:\developer\Kredek\patryk_ruczkin_cpc2021-2\PatrykRuczkinLab3PracDom\PatrykRuczkinLab3PracDom\obj\Debug\PatrykRuczkinLab3PracDom.csproj.AssemblyReference.cache
+D:\developer\Kredek\patryk_ruczkin_cpc2021-2\PatrykRuczkinLab3PracDom\PatrykRuczkinLab3PracDom\obj\Debug\PatrykRuczkinLab3PracDom.csproj.CoreCompileInputs.cache
+D:\developer\.NET\Kredek\patryk_ruczkin_cpc2021-2\PatrykRuczkinLab3PracDom\PatrykRuczkinLab3PracDom\obj\Debug\PatrykRuczkinLab3PracDom.csproj.AssemblyReference.cache
+D:\developer\.NET\Kredek\patryk_ruczkin_cpc2021-2\PatrykRuczkinLab3PracDom\PatrykRuczkinLab3PracDom\obj\Debug\PatrykRuczkinLab3PracDom.csproj.SuggestedBindingRedirects.cache
+D:\developer\.NET\Kredek\patryk_ruczkin_cpc2021-2\PatrykRuczkinLab3PracDom\PatrykRuczkinLab3PracDom\obj\Debug\PatrykRuczkinLab3PracDom.csproj.CoreCompileInputs.cache

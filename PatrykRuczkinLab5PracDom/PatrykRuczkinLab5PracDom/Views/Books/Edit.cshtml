@@ -1,0 +1,52 @@
+﻿@model PatrykRuczkinLab5PracDom.Models.BookDetailsViewModel
+
+
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Tytuł</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label">Opis</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearOfRelease" class="control-label">Rok wydania</label>
+                <input asp-for="YearOfRelease" class="form-control" />
+                <span asp-validation-for="YearOfRelease" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorFullName" class="control-label">Imie i nazwisko autora</label>
+                <span class="form-control">@Model.AuthorFullName</span>
+                <span asp-validation-for="AuthorFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryName" class="control-label">Kategoria</label>
+                <span class="form-control">@Model.CategoryName</span>
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublisherName" class="control-label">Wydawca</label>
+                <span class="form-control">@Model.PublisherName</span>
+                <span asp-validation-for="PublisherName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Powrót</a>
+</div>
+

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<!-- Stworzone na: Google Chrome -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <title>Stopwatch</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../styles/style2.css" rel="stylesheet" />
+
+</head>
+
+<!-- Wygląd strony -->
+<body>
+    <!-- Panel nawigacyjny -->
+    <nav class="links">
+        <ul>
+            <li><a href="index.html" id="index">Clock</a></li>
+            <li><a href="strona2.html" id="timer">Timer</a></li>
+            <li><a href="strona3.html" id="countdown">Countdown</a></li>
+        </ul>
+    </nav>
+    <!-- Nagłówek naszej strony -->
+    <header>Stopwatch!</header>
+    <!-- Kontener zawierajacy głowny zawierajacy dane oraz przyciski  -->
+    <div class="stopwatch">
+        <span class="segment" id="minutes">00</span>
+        <span class="segment">:</span>
+        <span class="segment" id="seconds">00</span>
+        <span class="segment">.</span>
+        <span class="segment" id="centiseconds">00</span>
+
+        <button class="button" id="button_start_stop" onclick="ChangeTimerStatus();">
+            <span class="material-icons">play_arrow</span>
+        </button>
+        <button class="button" id="button_reset" onclick="Reset();">
+            <span class="material-icons">clear_all</span>
+        </button>
+    </div>
+
+    <!-- Podłączenie skryptów do strony -->
+<script src="../scripts/skrypty2.js"></script>
+
+
+</body>
+    </html>

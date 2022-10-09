@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<!-- Stworzone na: Google Chrome -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <title>Timer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../styles/style3.css" rel="stylesheet" />
+
+</head>
+
+<!-- Wygląd strony -->
+<body>
+    <!-- Panel nawigacyjny -->
+    <nav class="links">
+        <ul>
+            <li><a href="index.html" id="index">Clock</a></li>
+            <li><a href="strona2.html" id="timer">Timer</a></li>
+            <li><a href="strona3.html" id="countdown">Countdown</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nagłówek naszej strony -->
+    <header>Countdown Timer!</header>
+
+
+<!-- Kontener główny -->
+    <div id="timer">
+        <!-- Kontener z danymi do wpisania-->
+        <div id="time">
+            <div id="hours_container" class="container">
+                <label for="hours">Godziny</label>
+                <input type="number" id="hours" name="hours" max="24" min="0" class="value">
+            </div>
+            <div id="minutes_container" class="container">
+                <label for="minutes">Minuty</label>
+                <input type="number" id="minutes" name="minutes" max="60" min="0" class="value">
+            </div>
+            <div id="seconds_container" class="container">
+                <label for="seconds">Sekundy</label>
+                <input type="number" id="seconds" name="seconds" max="60" min="0" class="value">
+            </div>
+        </div>
+        <!-- Kontener z przyciskami -->
+        <div id="buttons_container">
+            <button class="button" id="button_start_stop" onclick="ChangeTimerStatus();">
+                <span class="material-icons">play_arrow</span>
+            </button>
+            <button class="button" id="button_reset" onclick="Reset();">
+                <span class="material-icons">clear_all</span>
+            </button>
+        </div>
+        <!-- Kontener zawierajacy przycisk alarm-->
+        <div id="alarm_container">
+            <button class="button" id="alarm">
+                <span class="material-icons">notifications_active</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Podłączenie skryptów do strony -->
+    <script src="../scripts/skrypty3.js"></script>
+    <script>AddEventListener();</script>
+    <script>PrintTime();</script>
+
+</body>
+</html>

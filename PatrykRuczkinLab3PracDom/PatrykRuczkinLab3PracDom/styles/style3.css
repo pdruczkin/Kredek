@@ -1,0 +1,100 @@
+﻿/* Styl całego ciała strony */
+body {
+    background-image: linear-gradient(to right, #00001a, #051405);
+    color: white;
+    margin: 2%;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Styl nagłówka strony */
+header {
+
+    text-align: center;
+    font-size: 100px;
+}
+
+/* Styl kontenera głównego na stronie */
+#time {
+    margin: 10px;
+    display: inline-block;
+    justify-content: center;
+}
+
+/* Styl kontenera z czasem na stronie */
+.container {
+    display: grid;
+    font-size: 40px;
+    border-radius: 30%;
+}
+
+/* Styl wartosci czasu na stronie */
+.value {
+    font-size: 50px;
+    text-align: center;
+}
+/* Styl przycisku w kontenerze czasu na stronie */
+#buttons_container {
+    margin: 50px;
+}
+/* Styl przycisku na stronie */
+.button {
+    margin: 10px;
+    height: 64px;
+    width: 64px;
+    border-radius: 30%;
+}
+/* Styl przycisku start_stop na stronie */
+#button_start_stop {
+    background-color: #7FFF00;
+}
+/* Styl przycisku reset na stronie */
+#button_reset {
+    background-color: red;
+}
+/* Styl przycisku alarm na stronie */
+#alarm {
+    background-color: orangered;
+    animation: shake .1s ease-in infinite;
+    display: none;
+}
+
+/* Animacja drgania */
+@keyframes shake {
+    25% {
+        transform: translateX(-1px);
+    }
+    75% {
+        transform: translateX(1px);
+    }
+}
+
+
+
+/* Styl panelu nawigacji na stronie */
+nav {
+    height: 100px;
+    padding: 0px 50px;
+}
+
+/* Styl elementu w liscie w panelu nawigacji na stronie */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+/* Styl akapitu elementu w liscie w panelu nawigacji na stronie */
+nav ul li a {
+    font-size: 30px;
+    padding: 0px 50px;
+    color: #ffffcc;
+}
+/* Styl akapitu elementu w liscie w panelu nawigacji po najechaniu na stronie */
+nav ul li a:hover {
+    background-color: #00331f;
+    transition: background-color 3s;
+}
+/* Styl akapitu elementu w liscie w panelu nawigacji po kliknięciu na stronie */
+nav ul li:active {
+    background-color: #00331f;
+}

@@ -1,0 +1,38 @@
+﻿@model PatrykRuczkinLab5PracDom.Models.CategoryViewModel
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Model.Name
+        </th>
+    </tr>
+    <tr>
+        <th>
+            @Model.Description
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td>
+                        @book.Title
+                    </td>
+                    <td>
+                        @book.AuthorFullName
+                    </td>
+                </tr>
+            }
+        </td>
+    </tr>
+        </tbody>
+    </table>
+
+<div>
+    @Html.ActionLink("Powrót", "Index","Books")
+</div>

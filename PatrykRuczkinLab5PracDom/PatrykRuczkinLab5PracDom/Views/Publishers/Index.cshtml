@@ -1,0 +1,37 @@
+﻿@model IEnumerable<PatrykRuczkinLab5PracDom.Models.PublisherViewModel>
+
+
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Nazwa
+        </th>
+        <th>
+            Rok założenia
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearOfEstablishment)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Powrót","Index","Books")
+</div>

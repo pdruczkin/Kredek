@@ -1,0 +1,78 @@
+﻿/* Styl całego ciała strony */
+body {
+    background-image: linear-gradient(to right, #00001a, #051405);
+    color: white;
+    margin: 2%;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Styl nagłówka strony */
+header {
+    text-align: center;
+    font-size: 100px;
+}
+/* Styl kontenera głównego na stronie */
+.stopwatch {
+    display: inline-block;
+    padding: 50px 100px;
+    border-radius: 50px;
+    text-align: center;
+    border: 4px solid #004d39;
+}
+/* Styl kontenera głównego po najechaniu na stronie */
+.stopwatch:hover {
+    background-color: #00331f;
+    transition: background-color 3s;
+}
+/* Styl separatora na stronie */
+.segment {
+    font-size: 64px;
+}
+
+/* Styl przycisku na stronie */
+.button {
+    height: 64px;
+    width: 64px;
+    border-radius: 30%;
+    margin: 30px;
+}
+
+
+/* Styl przycisku start_stop na stronie */
+#button_start_stop {
+    background-color: #7FFF00;
+}
+/* Styl przycisku reset na stronie */
+#button_reset {
+    background-color: red;
+}
+
+
+/* Styl panelu nawigacji na stronie */
+nav {
+    height: 100px;
+    padding: 0px 50px;
+}
+
+/* Styl elementu w liscie w panelu nawigacji na stronie */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+/* Styl akapitu elementu w liscie w panelu nawigacji na stronie */
+nav ul li a {
+    font-size: 30px;
+    padding: 0px 50px;
+    color: #ffffcc;
+}
+/* Styl akapitu elementu w liscie w panelu nawigacji po najechaniu na stronie */
+nav ul li a:hover {
+    background-color: #00331f;
+    transition: background-color 3s;
+}
+/* Styl akapitu elementu w liscie w panelu nawigacji po kliknięciu na stronie */
+nav ul li:active {
+    background-color: #00331f;
+}
